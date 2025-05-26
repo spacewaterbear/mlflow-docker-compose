@@ -20,12 +20,17 @@ Change user admin
 first add default admin user and password
 
 ```bash
-export MLFLOW_TRACKING_USERNAME_NEW=<your_new_username>
-export MLFLOW_TRACKING_PASSWORD_NEW=<your_new_password>
+export MLFLOW_TRACKING_USERNAME_NEW=admini
+export MLFLOW_TRACKING_PASSWORD_NEW=7LgaAFkcxc@jx8iN
 ```
 And then 
 `make`
 `make clean`
+
+
+```bash
+htpasswd -c ./nginx/htpasswd admini
+```
 
 
 
